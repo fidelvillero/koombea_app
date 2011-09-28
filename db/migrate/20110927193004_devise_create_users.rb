@@ -1,7 +1,7 @@
 class DeviseCreateUsers < ActiveRecord::Migration
   def self.up
     create_table(:users) do |t|
-      t.database_authenticatable
+          t.database_authenticatable
           t.string :role, :default => 'Paciente', :null => false
           t.string :name
           t.string :EPS
